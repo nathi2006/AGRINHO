@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="reset.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+   <title>Agricultura</title>
+   <link rel="stylesheet" href="agricultura.css">
+</head>
+
+<body>
+   <header class="cabeçalho">
+      <div class="container">
+         <input type="checkbox" id="menu" class="container__botao">
+         <label for="menu" class="container__rotulo">
+            <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+         </label>
+         <ul class="lista-menu">
+            <li class="lista-menu__titulo">Categorias</li>
+            <li class="lista-menu__item">
+               <a href="agricultura.html" class="lista-menu__link">Agricultura</a>
+            </li>
+            <li class="lista-menu__item">
+               <a href="hortaliças.html" class="lista-menu__link">Hortaliças</a>
+            </li>
+            <li class="lista-menu__item">
+               <a href="jardinagem.html" class="lista-menu__link">Jardinagem</a>
+            </li>
+         </ul>
+         <img src="img/logo.png" alt="Logo da Alurabooks" class="container__imagem">
+         <h1 class="container__titulo"><a href="index.html" class="lista-menu__link2"><b
+                  class="container__titulo--negrito">Planta</b>Segura</h1></a>
+      </div>
+
+      <ul class="opções">
+         <input type="checkbox" id="opções-menu" class="opções__botão">
+         <label for="opções-menu" class="opções__rotulo">
+            <li class="opções__item">Categorias</li>
+         </label>
+
+         <ul class="lista-menu">
+            <li class="lista-menu__item">
+               <a href="agricultura.html" class="lista-menu__link">Agricultura</a>
+            </li>
+            <li class="lista-menu__item">
+               <a href="hortaliças.html" class="lista-menu__link">Hortaliças</a>
+            </li>
+            <li class="lista-menu__item">
+               <a href="jardinagem.html" class="lista-menu__link">Jardinagem</a>
+            </li>
+         </ul>
+
+         <li class="opções__item"><a href="informacoes.html" class="opções__link">Informações</a></li>
+         <li class="opções__item"><a href="mais.html" class="opções__link">Mais</a></li>
+      </ul>
+
+      <div class="container">
+         <a href="perfil.html"><img src="img/perfil.png" alt="Meu perfil" class="container__imagem"></a>
+      </div>
+   </header>
+
+   <section class="conteudo-principal">
+      <div class="caixa-conteudo-principal">
+      <h3 class="titulo-secundario"> <strong>A saúde da sua lavoura é essencial para garantir uma colheita
+            bem-sucedida.</strong></h3>
+      <p class="introducao">Para manter as culturas livres de pragas e doenças, é importante escolher o agrotóxico
+         adequado.
+         Cada tipo é projetado para combater problemas específicos, e a seleção correta depende do tipo de
+         desafio enfrentado em suas culturas.</p>
+      <h4 class="introducao">Aqui você poderá conseguir identificar de uma maneira prática indicando o
+         problema específico e os possíveis controladores ou combatentes adequados.</h4>
+      <p class="instrucoes"><strong class="topicos-negrito">Instrução:</strong> Neste site você pode identificar o
+         patógeno que esta afetando suas plantas, após identificar procure na tabela logo abaixo, ela te mostrará um
+         principio ativo eficaz.</p>
+      <p class="instrucoes">Após a identificação deves ir até uma loja agropecuária especializada que venda agrotóxicos, nela também você
+         encontra outros insumos agrícolas, como fertilizantes, sementes, e equipamentos.</p>
+      </div>
+      <h5 class="topicos">SEÇÕES
+         <li><strong class="topicos-negrito">Herbicidas:</strong> Identifique e combata ervas daninhas que competem com
+            suas culturas.</li>
+         <li><strong class="topicos-negrito">Inseticidas:</strong> Proteja suas plantas contra insetos danosos.</li>
+         <li><strong class="topicos-negrito">Fungicidas: </strong>Controle fungos que podem causar doenças nas plantas.
+         </li>
+         <li><strong class="topicos-negrito">Bactericidas:</strong> Elimine bactérias que afetam a saúde das suas
+            culturas.</li>
+         <li><strong class="topicos-negrito">Acaricidas:</strong> Gerencie ácaros que prejudicam suas plantas.</li>
+      </h5>
+      <div class="conteudo">
+         <div class="botoes">
+            <button aria-label="Herbicidas" class="botao ativo">Herbicidas</button>
+            <button aria-label="Inseticidas" class="botao">Inseticidas</button>
+            <button aria-label="Fungicidas" class="botao">Fungicidas</button>
+            <button aria-label="Bactericidas" class="botao">Bactericidas</button>
+            <button aria-label="Acaricidas" class="botao">Acaricidas</button>
+         </div>
+         <div class="abas-textos">
+            <div class="aba-conteudo ativo">
+               <h2>IDENTIFIQUE A PLANTA DANINHA:</h2>
+               <main role="main">
+                  <ul class="produtos">
+                     <li>
+                        <h2>Camilinha</h2>
+                        <img src="imagens/camilinha.png" class="imagens">
+                        <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                        <p class="produto-preco">Milho, soja, cana-de-açúcar</p>
+                     </li>
+                     <li>
+                        <h2>Caruru</h2>
+                        <img src="imagens/caruru.png" class="imagens">
+                        <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                        <p class="produto-preco">Milho, soja, algodão</p>
+                     </li>
+                     <li>
+                        <h2>Carrapixo</h2>
+                        <img src="imagens/carrapixo.png" alt="imagem carrapixo" class="imagens">
+                        <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                        <p class="produto-preco">Soja, milho, algodão</p>
+                     </li>
+                     <li>
+                        <h2>Buva</h2>
+                        <img src="imagens/8.png" class="imagens">
+                        <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                        <p class="produto-preco">Soja, milho, trigo</p>
+                     </li>
+                     <li>
+                        <h2>Capim-amargoso</h2>
+                        <img src="imagens/2.png" class="imagens">
+                        <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                        <p class="produto-preco">Soja, milho, algodão</p>
+                     </li>
+                     <li>
+                        <h2>Capim-colonião</h2>
+                        <img src="imagens/1.png" class="imagens">
+                        <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                        <p class="produto-preco">Cana-de-açúcar, pastagens</p>
+                     </li>
+                     <li>
+                        <h2>Capim-massambará </h2>
+                        <img src="imagens/4.png" class="imagens">
+                        <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                        <p class="produto-preco">Soja, milho, algodãos</p>
+                     </li>
+                     <li>
+                        <h2>Capim-pé-de-galinha </h2>
+                        <img src="imagens/6.png" class="imagens">
+                        <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                        <p class="produto-preco">Soja, milho, algodão</p>
+                     </li>
+                     <li>
+                        <h2>Erva-de-bicho</h2>
+                        <img src="imagens/3.png" class="imagens">
+                        <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                        <p class="produto-preco">Arroz, milho, soja</p>
+                     </li>
+                     <li>
+                        <h2>Fedegoso</h2>
+                        <img src="imagens/5.png" class="imagens">
+                        <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                        <p class="produto-preco">Soja, milho, algodão</p>
+                     </li>
+                     <li>
+                        <h2>Corda-de-viola</h2>
+                        <img src="imagens/7.png" class="imagens">
+                        <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                        <p class="produto-preco">Soja, milho, algodão</p>
+                     </li>
+                     <li>
+                        <h2>Picão-preto</h2>
+                        <img src="imagens/9.png" class="imagens">
+                        <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                        <p class="produto-preco">Soja, milho, feijão</p>
+                     </li>
+               </main>
+               <h3 class="aba-conteudo-titulo-principal">Herbicidas utilizados para controlar ervas daninhas e plantas
+                  indesejadas.
+               </h3>
+               <h4 class="aba-conteudo-titulo-secundario">Exemplo: Glifosato, Atrazina, 2,4-D.</h4>
+               <table class="styled-table">
+                  <thead>
+                     <tr>
+                        <th>Ervas daninhas</th>
+                        <th>Principio ativo</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <div class="contador">
+                        <div class="contador-pragas">
+                           <tr>
+                              <td>
+                                 <p class="contador-pragas-daninhas">Camilinha (Commelina benghalensis)</p>
+                              </td>
+                              <td>
+                                 <p class="contador-pragas-agrotoxicos">Atrazina</p>
+                              </td>
+                           </tr>
+                        </div>
+                        <div class="contador-pragas">
+                           <tr>
+                              <td>
+                                 <p class="contador-pragas-daninhas">Caruru (Amaranthus spp.)</p>
+                              </td>
+                              <td>
+                                 <p class="contador-pragas-agrotoxicos">Atrazina</p>
+                              </td>
+                           </tr>
+                        </div>
+                        <div class="contador-pragas">
+                           <tr>
+                              <td>
+                                 <p class="contador-pragas-daninhas">Carrapicho (Xanthium strumarium)</p>
+                              </td>
+                              <td>
+                                 <p class="contador-pragas-agrotoxicos">Dicamba</p>
+                              </td>
+                           </tr>
+                        </div>
+                        <div class="contador-pragas">
+                           <tr>
+                              <td>
+                                 <p class="contador-pragas-daninhas">Buva (Conyza bonariensis)</p>
+                              </td>
+                              <td>
+                                 <p class="contador-pragas-agrotoxicos">Glifosato</p>
+                              </td>
+                           </tr>
+                        </div>
+                        <div class="contador-pragas">
+                           <tr>
+                              <td>
+                                 <p class="contador-pragas-daninhas">Capim-amargoso (Digitaria insularis)</p>
+                              </td>
+                              <td>
+                                 <p class="contador-pragas-agrotoxicos">Glifosato</p>
+                              </td>
+                           </tr>
+                        </div>
+                        <div class="contador-pragas">
+                           <tr>
+                              <td>
+                                 <p class="contador-pragas-daninhas">Capim-colonião (Panicum maximum)</p>
+                              </td>
+                              <td>
+                                 <p class="contador-pragas-agrotoxicos">Glifosato</p>
+                              </td>
+                           </tr>
+                        </div>
+                        <div class="contador-pragas">
+                           <tr>
+                              <td>
+                                 <p class="contador-pragas-daninhas">Capim-massambará (Cenchrus echinatus)</p>
+                              </td>
+                              <td>
+                                 <p class="contador-pragas-agrotoxicos">Glifosato</p>
+                              </td>
+                           </tr>
+                        </div>
+                        <div class="contador-pragas">
+                           <tr>
+                              <td>
+                                 <p class="contador-pragas-daninhas">Capim-pé-de-galinha (Eleusine indica)</p>
+                              </td>
+                              <td>
+                                 <p class="contador-pragas-agrotoxicos">Glifosato</p>
+                              </td>
+                           </tr>
+                        </div>
+                        <div class="contador-pragas">
+                           <tr>
+                              <td>
+                                 <p class="contador-pragas-daninhas">Erva-de-bicho (Polygonum hydropiper)</p>
+                              </td>
+                              <td>
+                                 <p class="contador-pragas-agrotoxicos">Glifosato</p>
+                              </td>
+                           </tr>
+                        </div>
+                        <div class="contador-pragas">
+                           <tr>
+                              <td>
+                                 <p class="contador-pragas-daninhas">Fedegoso (Senna obtusifolia)</p>
+                              </td>
+                              <td>
+                                 <p class="contador-pragas-agrotoxicos">Glifosato</p>
+                              </td>
+                           </tr>
+                        </div>
+                        <div class="contador-pragas">
+                           <tr>
+                              <td>
+                                 <p class="contador-pragas-daninhas">Corda-de-viola (Ipomoea purpurea)</p>
+                              </td>
+                              <td>
+                                 <p class="contador-pragas-agrotoxicos">2,4-D</p>
+                              </td>
+                           </tr>
+                        </div>
+                        <div class="contador-pragas">
+                           <tr>
+                              <td>
+                                 <p class="contador-pragas-daninhas">Picão-preto (Bidens pilosa)</p>
+                              </td>
+                              <td>
+                                 <p class="contador-pragas-agrotoxicos">2,4-D</p>
+                              </td>
+                           </tr>
+                        </div>
+                  </tbody>
+            </div>
+            </table>
+         </div>
+         <div class="aba-conteudo">
+            <h2>IDENTIFIQUE O INSETO:</h2>
+            <main role="main">
+               <ul class="produtos">
+                  <li>
+                     <h2>Lagarta-do-cartucho </h2>
+                     <img src="imagens/lagarta do cartucho.png" class="imagens">
+                     <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                     <p class="produto-preco">Milho, algodão, soja, arroz</p>
+                  </li>
+                  <li>
+                     <h2>Pulgão </h2>
+                     <img src="imagens/pulgao.png" class="imagens">
+                     <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                     <p class="produto-preco">Algodão, trigo, milho, batata</p>
+                  </li>
+                  <li>
+                     <h2>Mosca-branca </h2>
+                     <img src="imagens/Mosca-branca .png" class="imagens">
+                     <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                     <p class="produto-preco">Algodão, tomate, batata, melão</p>
+                  </li>
+                  <li>
+                     <h2>Broca-do-café </h2>
+                     <img src="imagens/Broca-do-café .png" class="imagens">
+                     <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                     <p class="produto-preco">Café, cacau</p>
+                  </li>
+                  <li>
+                     <h2>Percevejo-marrom </h2>
+                     <img src="imagens/Percevejo-marrom .png" class="imagens">
+                     <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                     <p class="produto-preco">Soja, algodão, feijão</p>
+                  </li>
+                  <li>
+                     <h2>Cigarrinha-das-pastagens </h2>
+                     <img src="imagens/Cigarrinha-das-pastagens.png" class="imagens">
+                     <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                     <p class="produto-preco">Pastagens, milho</p>
+                  </li>
+                  <li>
+                     <h2>Traça-das-crucíferas </h2>
+                     <img src="imagens/Traça-das-crucíferas .png" class="imagens">
+                     <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                     <p class="produto-preco">Couve, repolho, brócolis</p>
+                  </li>
+                  <li>
+                     <h2>Besouro japonês </h2>
+                     <img src="imagens/Besouro japonês.png" class="imagens">
+                     <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                     <p class="produto-preco">Gramíneas, milho e arroz</p>
+                  </li>
+                  <li>
+                     <h2>Gorgulho do milho </h2>
+                     <img src="imagens/Gorgulho do milho.png" class="imagens">
+                     <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                     <p class="produto-preco">Milho, grãos armazenados</p>
+                  </li>
+                  <li>
+                     <h2>Ácaro-rajado </h2>
+                     <img src="imagens/Ácaro-rajado .png" class="imagens">
+                     <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                     <p class="produto-preco">Frutas, legumes, algodão</p>
+                  </li>
+            </main>
+            <h3 class="aba-conteudo-titulo-principal">Inseticidas utilizados para controlar insetos que podem danificar
+               as culturas.
+            </h3>
+            <h4 class="aba-conteudo-titulo-secundario">Exemplo: Imidacloprido, Clorpirifós, Permetrina.</h4>
+            <table class="styled-table">
+               <thead>
+                  <tr>
+                     <th>Insetos</th>
+                     <th>Principio ativo</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <div class="contador">
+                     <div class="contador-pragas">
+                        <tr>
+                           <td>
+                              <p class="contador-pragas-daninhas">Lagarta-do-cartucho (Spodoptera frugiperda)</p>
+                           </td>
+                           <td>
+                              <p class="contador-pragas-agrotoxicos">Clorantraniliprole, Espinetoram</p>
+                           </td>
+                        </tr>
+                     </div>
+                     <div class="contador-pragas">
+                        <tr>
+                           <td>
+                              <p class="contador-pragas-daninhas">Pulgão (Aphididae)</p>
+                           </td>
+                           <td>
+                              <p class="contador-pragas-agrotoxicos">Imidacloprida, Acetamiprida</p>
+                           </td>
+                        </tr>
+                     </div>
+                     <div class="contador-pragas">
+                        <tr>
+                           <td>
+                              <p class="contador-pragas-daninhas">Mosca-branca (Bemisia tabaci)</p>
+                           </td>
+                           <td>
+                              <p class="contador-pragas-agrotoxicos">Buprofezina, Espirotetramato</p>
+                           </td>
+                        </tr>
+                     </div>
+                     <div class="contador-pragas">
+                        <tr>
+                           <td>
+                              <p class="contador-pragas-daninhas">Broca-do-café (Hypothenemus hampei)</p>
+                           </td>
+                           <td>
+                              <p class="contador-pragas-agrotoxicos">Endossulfano, Clorpirifós</p>
+                           </td>
+                        </tr>
+                     </div>
+                     <div class="contador-pragas">
+                        <tr>
+                           <td>
+                              <p class="contador-pragas-daninhas">Percevejo-marrom (Euschistus heros)</p>
+                           </td>
+                           <td>
+                              <p class="contador-pragas-agrotoxicos">Lambda-cialotrina, Metaflumizona</p>
+                           </td>
+                        </tr>
+                     </div>
+                     <div class="contador-pragas">
+                        <tr>
+                           <td>
+                              <p class="contador-pragas-daninhas">Cigarrinha-das-pastagens (Deois flavopicta)</p>
+                           </td>
+                           <td>
+                              <p class="contador-pragas-agrotoxicos"> Fipronil, Tiametoxam</p>
+                           </td>
+                        </tr>
+                     </div>
+                     <div class="contador-pragas">
+                        <tr>
+                           <td>
+                              <p class="contador-pragas-daninhas">Traça-das-crucíferas (Plutella xylostella)</p>
+                           </td>
+                           <td>
+                              <p class="contador-pragas-agrotoxicos">Indoxacarbe, Bacillus thuringiensis (Bt)</p>
+                           </td>
+                        </tr>
+                     </div>
+                     <div class="contador-pragas">
+                        <tr>
+                           <td>
+                              <p class="contador-pragas-daninhas">Besouro japonês (Popillia japonica)</p>
+                           </td>
+                           <td>
+                              <p class="contador-pragas-agrotoxicos">Carbaryl, Neem Oil (óleo de neem)</p>
+                           </td>
+                        </tr>
+                     </div>
+                     <div class="contador-pragas">
+                        <tr>
+                           <td>
+                              <p class="contador-pragas-daninhas">Gorgulho do milho (Sitophilus zeamais)</p>
+                           </td>
+                           <td>
+                              <p class="contador-pragas-agrotoxicos">Fosfina, Deltametrina</p>
+                           </td>
+                        </tr>
+                     </div>
+                     <div class="contador-pragas">
+                        <tr>
+                           <td>
+                              <p class="contador-pragas-daninhas">Ácaro-rajado (Tetranychus urticae)</p>
+                           </td>
+                           <td>
+                              <p class="contador-pragas-agrotoxicos">Abamectina, Bifenazato</p>
+                           </td>
+                        </tr>
+                     </div>
+               </tbody>
+         </div>
+         </table>
+      </div>
+      <div class="aba-conteudo">
+         <h2>IDENTIFIQUE O FUNGO:</h2>
+         <main role="main">
+            <ul class="produtos">
+               <li>
+                  <h2>Ferrugem Asiática da Soja</h2>
+                  <img src="imagens/Ferrugem Asiática da Soja.png" class="imagens">
+                  <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                  <p class="produto-preco">Soja</p>
+               </li>
+               <li>
+                  <h2>Oídio</h2>
+                  <img src="imagens/Oídio1.png" class="imagens">
+                  <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                  <p class="produto-preco">Uva, citros, maçã, outras frutas e hortaliças</p>
+               </li>
+               <li>
+                  <h2>Mancha-alvo</h2>
+                  <img src="imagens/Mancha-alvo.png" class="imagens">
+                  <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                  <p class="produto-preco">Citros, feijão, algodão</p>
+               </li>
+               <li>
+                  <h2>Podridão-branca</h2>
+                  <img src="imagens/Podridão branca.png" class="imagens">
+                  <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                  <p class="produto-preco">Feijão, algodão, soja, hortaliças</p>
+               </li>
+               <li>
+                  <h2>Ferrugem do Café</h2>
+                  <img src="imagens/Ferrugem do Café .png" class="imagens">
+                  <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                  <p class="produto-preco">Café</p>
+               </li>
+               <li>
+                  <h2>Antracnose</h2>
+                  <img src="imagens/Antracnose.png" class="imagens">
+                  <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                  <p class="produto-preco">Feijão, milho, citros, manga</p>
+               </li>
+               <li>
+                  <h2>Mofo-branco</h2>
+                  <img src="imagens/Mofo-branco .png" class="imagens">
+                  <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                  <p class="produto-preco">Feijão, batata, tomate, outras hortaliças</p>
+               </li>
+               <li>
+                  <h2>Mancha Parda</h2>
+                  <img src="imagens/Mancha Parda.png" class="imagens">
+                  <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                  <p class="produto-preco">Maçã, pera, amêndoa, outras frutas</p>
+               </li>
+               <li>
+                  <h2>Fusariose</h2>
+                  <img src="imagens/Fusariose .png" class="imagens">
+                  <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                  <p class="produto-preco">Trigo, milho, tomate, outras plantas</p>
+               </li>
+            </ul>
+         </main>
+
+         <h3 class="aba-conteudo-titulo-principal">Fungicidas utilizados para controlar fungos e doenças fúngicas em
+            plantas.
+         </h3>
+         <h4 class="aba-conteudo-titulo-secundario">Exemplo: Mancozeb, Tebuconazol, Clorotalonil.</h4>
+
+         <table class="styled-table">
+            <thead>
+               <tr>
+                  <th>Fungo / Doença Fúngica</th>
+                  <th>Principio ativo</th>
+               </tr>
+            </thead>
+            <tbody>
+               <div class="contador">
+                  <div class="contador-pragas">
+                     <tr>
+                        <td>
+                           <p class="contador-pragas-daninhas">Ferrugem Asiática da Soja (Phakopsora pachyrhizi)</p>
+                        </td>
+                        <td>
+                           <p class="contador-pragas-agrotoxicos">Triazóis, Estrobilurinas</p>
+                        </td>
+                     </tr>
+                  </div>
+                  <div class="contador-pragas">
+                     <tr>
+                        <td>
+                           <p class="contador-pragas-daninhas">Oídio (Blumeria graminis)</p>
+                        </td>
+                        <td>
+                           <p class="contador-pragas-agrotoxicos">Enxofre, Triazóis</p>
+                        </td>
+                     </tr>
+                  </div>
+                  <div class="contador-pragas">
+                     <tr>
+                        <td>
+                           <p class="contador-pragas-daninhas">Mancha-alvo (Corynespora cassiicola)</p>
+                        </td>
+                        <td>
+                           <p class="contador-pragas-agrotoxicos">Estrobilurinas, Triazóis</p>
+                        </td>
+                     </tr>
+                  </div>
+                  <div class="contador-pragas">
+                     <tr>
+                        <td>
+                           <p class="contador-pragas-daninhas">Podridão-branca (Sclerotinia sclerotiorum)</p>
+                        </td>
+                        <td>
+                           <p class="contador-pragas-agrotoxicos">Tiofanato-metílico, Carboxamidas</p>
+                        </td>
+                     </tr>
+                  </div>
+                  <div class="contador-pragas">
+                     <tr>
+                        <td>
+                           <p class="contador-pragas-daninhas">Ferrugem do Café (Hemileia vastatrix)</p>
+                        </td>
+                        <td>
+                           <p class="contador-pragas-agrotoxicos">Ciproconazol, Propiconazol</p>
+                        </td>
+                     </tr>
+                  </div>
+                  <div class="contador-pragas">
+                     <tr>
+                        <td>
+                           <p class="contador-pragas-daninhas">Antracnose (Colletotrichum spp.)</p>
+                        </td>
+                        <td>
+                           <p class="contador-pragas-agrotoxicos">Mancozebe, Clorotalonil</p>
+                        </td>
+                     </tr>
+                  </div>
+                  <div class="contador-pragas">
+                     <tr>
+                        <td>
+                           <p class="contador-pragas-daninhas">Mofo-branco (Botrytis cinerea)</p>
+                        </td>
+                        <td>
+                           <p class="contador-pragas-agrotoxicos">Fluazinam, Tiofanato-metílico</p>
+                        </td>
+                     </tr>
+                  </div>
+                  <div class="contador-pragas">
+                     <tr>
+                        <td>
+                           <p class="contador-pragas-daninhas">Mancha Parda (Alternaria spp.)</p>
+                        </td>
+                        <td>
+                           <p class="contador-pragas-agrotoxicos">Triazóis, Estrobilurinas</p>
+                        </td>
+                     </tr>
+                  </div>
+                  <div class="contador-pragas">
+                     <tr>
+                        <td>
+                           <p class="contador-pragas-daninhas">Fusariose (Fusarium spp.)</p>
+                        </td>
+                        <td>
+                           <p class="contador-pragas-agrotoxicos">Tiofanato-metílico, Carbendazim</p>
+                        </td>
+                     </tr>
+                  </div>
+               </div>
+      </div>
+      </tbody>
+      </table>
+      </div>
+      <div class="aba-conteudo">
+         <h2>IDENTIFIQUE A BACTÉRIA:</h2>
+         <main role="main">
+            <ul class="produtos">
+               <li>
+                  <h2>Mancha Bacteriana</h2>
+                  <img src="imagens/Mancha Bacteriana.png" class="imagens">
+                  <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                  <p class="produto-preco">Tomate, Pimentão, Citros, Repolho, Pepino</p>
+               </li>
+               <li>
+                  <h2>Pseudomonas</h2>
+                  <img src="imagens/Pseudomonas.png" class="imagens">
+                  <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                  <p class="produto-preco">Tomate, Pimentão, Ervilha, Batata, Citros</p>
+               </li>
+               <li>
+                  <h2>Murcha Bacteriana</h2>
+                  <img src="imagens/Murcha Bacteriana.png" class="imagens">
+                  <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                  <p class="produto-preco">Batata, Tomate, Pimentão, Berinjela, Tabaco</p>
+               </li>
+               <li>
+                  <h2>Galha da Coroa</h2>
+                  <img src="imagens/Galha da Coroa.png" class="imagens">
+                  <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                  <p class="produto-preco">Tomate, Pimentão, Berinjela, Batata, Citros</p>
+               </li>
+               <li>
+                  <h2>Fogo Bacteriano</h2>
+                  <img src="imagens/Fogo Bacteriano.png" class="imagens">
+                  <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                  <p class="produto-preco">Macieira, Pera, Marmeleiro, Pêssego</p>
+               </li>
+
+         </main>
+         <h3 class="aba-conteudo-titulo-principal">Bactericidas utilizados para controlar bactérias que podem causar
+            doenças nas
+            plantas.</h3>
+         <h4 class="aba-conteudo-titulo-secundario">Exemplo: Sulfato de cobre, Estreptomicina.</h4>
+         <table class="styled-table">
+            <thead>
+               <tr>
+                  <th>Bactéria</th>
+                  <th>Principio ativo</th>
+               </tr>
+            </thead>
+            <tbody>
+               <div class="contador">
+                  <div class="contador-pragas">
+                     <tr>
+                        <td>
+                           <p class="contador-pragas-daninhas">Mancha Bacteriana (Xanthomonas campestris)</p>
+                        </td>
+                        <td>
+                           <p class="contador-pragas-agrotoxicos">Cobre (Hidróxido de cobre, Oxicloreto de cobre)</p>
+                        </td>
+                     </tr>
+                  </div>
+                  <div class="contador-pragas">
+                     <tr>
+                        <td>
+                           <p class="contador-pragas-daninhas">Pseudomonas (Pseudomonas syringae)</p>
+                        </td>
+                        <td>
+                           <p class="contador-pragas-agrotoxicos">Cobre, Estreptomicina</p>
+                        </td>
+                     </tr>
+                  </div>
+                  <div class="contador-pragas">
+                     <tr>
+                        <td>
+                           <p class="contador-pragas-daninhas">Murcha Bacteriana (Ralstonia solanacearum)</p>
+                        </td>
+                        <td>
+                           <p class="contador-pragas-agrotoxicos">Cobre, Tetraciclina</p>
+                        </td>
+                     </tr>
+                  </div>
+                  <div class="contador-pragas">
+                     <tr>
+                        <td>
+                           <p class="contador-pragas-daninhas">Galha da Coroa (Agrobacterium tumefaciens)</p>
+                        </td>
+                        <td>
+                           <p class="contador-pragas-agrotoxicos">Tetraciclina, Streptomycin</p>
+                        </td>
+                     </tr>
+                  </div>
+                  <div class="contador-pragas">
+                     <tr>
+                        <td>
+                           <p class="contador-pragas-daninhas">Fogo Bacteriano (Erwinia amylovora)</p>
+                        </td>
+                        <td>
+                           <p class="contador-pragas-agrotoxicos">Cobre, Estreptomicina</p>
+                        </td>
+                     </tr>
+                  </div>
+               </div>
+            </tbody>
+         </table>
+      </div>
+      <div class="aba-conteudo">
+         <h2>IDENTIFIQUE O ÁCARO:</h2>
+         <main role="main">
+            <ul class="produtos">
+               <li>
+                  <h2>Ácaro-rajado</h2>
+                  <img src="imagens/Ácaro-rajado .png" class="imagens">
+                  <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                  <p class="produto-preco">Soja, morango, tomate, algodão, feijão, pimentão</p>
+               </li>
+               <li>
+                  <h2>Ácaro-branco</h2>
+                  <img src="imagens/Polyphagotarsonemus latus (Ácaro-branco) (1).png" class="imagens">
+                  <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                  <p class="produto-preco">Pimentão, pimentas, morango, algodão, tomate, batata</p>
+               </li>
+               <li>
+                  <h2>Ácaro-vermelho-da-macieira</h2>
+                  <img src="imagens/Panonychus ulmi (Ácaro-vermelho-da-macieira).png" class="imagens">
+                  <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                  <p class="produto-preco">Maçã, pera, ameixa, pêssego</p>
+               </li>
+               <li>
+                  <h2>Ácaro-da-leprose-dos-citros</h2>
+                  <img src="imagens/Brevipalpus phoenicis (Ácaro-da-leprose-dos-citros).png" class="imagens">
+                  <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                  <p class="produto-preco">Citros (laranja, limão, tangerina)</p>
+               </li>
+               <li>
+                  <h2>Ácaros-eriofídeos</h2>
+                  <img src="imagens/Eriophyes spp. (Ácaros-eriofídeos).png" class="imagens">
+                  <p class="produto-descricao">Mais encontrado em lavouras de</p>
+                  <p class="produto-preco">Videiras (uva), macieiras, peras, pêssegos</p>
+               </li>
+
+
+         </main>
+         <h3 class="aba-conteudo-titulo-principal">Acaricidas utilizados para controlar ácaros que podem infestar as
+            plantas.
+         </h3>
+         <h4 class="aba-conteudo-titulo-secundario">Exemplo: Abamectina, Dicofol.</h4>
+         <table class="styled-table">
+            <thead>
+               <tr>
+                  <th>Ácaro</th>
+                  <th>Principio ativo</th>
+               </tr>
+            </thead>
+            <tbody>
+               <div class="contador">
+                  <div class="contador-pragas">
+                     <tr>
+                        <td>
+                           <p class="contador-pragas-daninhas">Ácaro-rajado (Tetranychus urticae)</p>
+                        </td>
+                        <td>
+                           <p class="contador-pragas-agrotoxicos">Abamectina, Fenazaquina</p>
+                        </td>
+                     </tr>
+                  </div>
+                  <div class="contador-pragas">
+                     <tr>
+                        <td>
+                           <p class="contador-pragas-daninhas">Ácaro-branco (Polyphagotarsonemus latus)</p>
+                        </td>
+                        <td>
+                           <p class="contador-pragas-agrotoxicos">Enxofre, Abamectina</p>
+                        </td>
+                     </tr>
+                  </div>
+                  <div class="contador-pragas">
+                     <tr>
+                        <td>
+                           <p class="contador-pragas-daninhas">Ácaro-vermelho-da-macieira (Panonychus ulmi)</p>
+                        </td>
+                        <td>
+                           <p class="contador-pragas-agrotoxicos">Hexitiazox, Fenbutatin-óxido</p>
+                        </td>
+                     </tr>
+                  </div>
+                  <div class="contador-pragas">
+                     <tr>
+                        <td>
+                           <p class="contador-pragas-daninhas">Ácaro-da-leprose-dos-citros (Brevipalpus phoenicis)</p>
+                        </td>
+                        <td>
+                           <p class="contador-pragas-agrotoxicos">Enxofre, Dicofol</p>
+                        </td>
+                     </tr>
+                  </div>
+                  <div class="contador-pragas">
+                     <tr>
+                        <td>
+                           <p class="contador-pragas-daninhas">Ácaros-eriofídeos (Eriophyes spp.)</p>
+                        </td>
+                        <td>
+                           <p class="contador-pragas-agrotoxicos">Enxofre, Clorpirifós</p>
+                        </td>
+                     </tr>
+                  </div>
+               </div>
+            </tbody>
+         </table>
+
+      </div>
+   </section>
+   <footer class="rodapé">
+      <h2 class="rodapé__titulo">Planta Segura</h2>
+        <p>&copy; 2024 Planta Segura. Todos os direitos reservados.</p>
+        <img src="img/logo.png" alt="Logo da Alurabooks" class="rodapé__imagem">
+      <ul class="lista-rodapé">
+         <li class="lista-rodapé__titulo">Links Úteis</li>
+         <li class="lista-rodapé__item">
+            <a href="agricultura.html" class="lista-rodapé__link">Agricultura</a>
+         </li>
+         <li class="lista-rodapé__item">
+            <a href="hortaliças.html" class="lista-rodapé__link">Hortaliças</a>
+         </li>
+         <li class="lista-rodapé__item">
+            <a href="jardinagem.html" class="lista-rodapé__link">Jardinagem</a>
+         </li>
+         <li class="lista-rodapé__item">
+            <a href="index.html" class="lista-rodapé__link">Página inicial</a>
+         </li>
+         <li class="lista-rodapé__item">
+            <a href="informacoes.html" class="lista-rodapé__link">Informações</a>
+         </li>
+      </ul>
+   </footer>
+   <script src="main.js"></script>
+</body>
+
+</html>

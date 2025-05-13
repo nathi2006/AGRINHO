@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="perfil.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="agricultura.html" class="lista-menu__link">Agricultura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="hortaliças.html" class="lista-menu__link">Hortaliças</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="jardinagem.html" class="lista-menu__link">Jardinagem</a>
+                </li>
+            </ul>
+            <img src="img/logo.png" alt="Logo da Alurabooks" class="container__imagem">
+            <h1 class="container__titulo"><a href="index.html" class="lista-menu__link2"><b
+                        class="container__titulo--negrito">Planta</b>Segura</h1></a>
+        </div>
+
+        <ul class="opções">
+            <input type="checkbox" id="opções-menu" class="opções__botão">
+            <label for="opções-menu" class="opções__rotulo">
+                <li class="opções__item">Categorias</li>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="agricultura.html" class="lista-menu__link">Agricultura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="hortaliças.html" class="lista-menu__link">Hortaliças</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="jardinagem.html" class="lista-menu__link">Jardinagem</a>
+                </li>
+            </ul>
+            <li class="opções__item"><a href="informacoes.html" class="opções__link">Informações</a></li>
+            <li class="opções__item"><a href="mais.html" class="opções__link">Mais</a></li>
+        </ul>
+
+        <div class="container">
+            <a href="perfil.html"><img src="img/perfil.png" alt="Meu perfil" class="container__imagem"></a>
+        </div>
+    </header>
+
+    <main class="conteudo">
+        <section class="formulario">
+            <h2 class="formulario__titulo">Entre em contato</h2>
+            <form>
+                <label for="nomesobrenome" class="formulario__label">Nome e sobrenome</label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required placeholder="seu nome">
+
+                <label for="email" class="formulario__label">Email</label>
+                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+                <label for="telefone" class="formulario__label">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+                <div class="form-group" class="formulario__label">
+                    <label for="localidade">Mora na cidade ou no interior?</label>
+                    <select id="localidade" name="localidade">
+                        <option value="cidade">Cidade</option>
+                        <option value="interior">Interior</option>
+                    </select>
+                </div>
+
+                <label for="mensagem" class="formulario__label">Mensagem</label>
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required
+                    placeholder="escreva aqui sua dúvida, mmensagem ou sugestão"></textarea>
+
+                <fieldset class="contatos">
+                    <label class="contatos">Como prefere o nosso contato?</label> </legend>
+                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">
+                        Email</label>
+                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">
+                        Telefone</label>
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp"
+                            checked> WhatsApp</label>
+                </fieldset>
+
+                <div>
+                    <label class="checkbox"><input type="checkbox" checked> Gostaria de receber nossas novidades por
+                        email?</label>
+                </div>
+                <input type="submit" value="Enviar" class="enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer class="rodapé">
+        <h2 class="rodapé__titulo">Planta Segura</h2>
+        <img src="img/logo.png" alt="Logo da Alurabooks" class="rodapé__imagem">
+        <p>&copy; 2024 Planta Segura. Todos os direitos reservados.</p>
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">Links Úteis</li>
+            <li class="lista-rodapé__item">
+                <a href="agricultura.html" class="lista-rodapé__link">Agricultura</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <a href="hortaliças.html" class="lista-rodapé__link">Hortaliças</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <a href="jardinagem.html" class="lista-rodapé__link">Jardinagem</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <a href="index.html" class="lista-rodapé__link">Página inicial</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <a href="informacoes.html" class="lista-rodapé__link">Informações</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

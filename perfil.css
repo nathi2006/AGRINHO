@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+@import url("styles/header.css");
+@import url("styles/rodapé.css");
+
+:root {
+    --cor-de-fundo: #eefcfa;
+    --verde: #5cc7a3;
+    --branco-2: #1f3124;
+    --branco: #FFFFFF;
+    --botao-ativo: #57a08a;
+    --botao-inativo: #a3dfdb;
+    --texto-fundo: rgb(204, 238, 222);
+    --texto: #333;
+    /* Melhor contraste para leitura */
+    --azul-degrade: linear-gradient(97.54deg, #268b69 35.49%, #b5fddb 165.37%);
+    --laranja: #000000;
+    --fonte-secundario: "Josefin Sans";
+    --preto: #000000;
+    --fonte-principal: "Poppins";
+    --cinza: #263a2e;
+    --cinza-claro:#e6fdfa;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+    color: var(--texto);
+}
+.cabeçalho__menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.container__botao:checked~.container__rotulo>.cabeçalho__menu-hamburguer {
+    background-image: url("../img/Menu Aberto.svg");
+}
+
+.container__botao:checked~.container__rotulo {
+    background: var(--azul-degrade);
+}
+
+.cabeçalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem {
+    padding: 1em;
+    width: 40px;
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+    list-style: none;
+}
+
+.container__botao:checked~.lista-menu {
+    display: block;
+}
+
+.lista-menu__titulo,
+.lista-menu__item {
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista-menu__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista-menu__link {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.lista-menu__link2 {
+    background: var(--preto);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.container__botao {
+    display: none;
+}
+
+.container__titulo {
+    display: none;
+}
+
+.container__titulo--negrito {
+    font-size: 10px;
+}
+
+.opções {
+    display: none;
+    font-size: 18px;
+}
+
+.opções :hover{
+    color: #57a08a;
+}
+.container__texto {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .container__titulo,
+    .container__titulo--negrito {
+        font-family: var(--fonte-secundario);
+        font-size: 30px;
+    }
+
+    .container__titulo {
+        font-weight: 400;
+        display: block;
+    }
+
+    .container__titulo--negrito {
+        font-weight: 700;
+    }
+
+    .opções {
+        display: flex;
+    }
+
+    .opções__item {
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+
+    .opções__link {
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .container__imagem-transparente {
+        display: none;
+    }
+
+    .cabeçalho__menu-hamburguer {
+        display: none;
+    }
+
+    .opções__botão:checked~.lista-menu {
+        display: block;
+        width: auto;
+    }
+
+    .opções__botão {
+        display: none;
+    }
+
+    .opções__botão:checked~.opções__rotulo>.opções__item {
+        background: var(--azul-degrade);
+        color: var(--branco);
+    }
+
+    .opções__item {
+        padding: 2em 1em;
+    }
+
+    .lista-menu__item:hover {
+        background: var(--azul-degrade);
+    }
+
+    .lista-menu__item:hover>.lista-menu__link {
+        -webkit-text-fill-color: var(--branco);
+        text-decoration: none;
+    }
+
+}
+
+@media screen and (min-width: 1728px) {
+    .container__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .cabeçalho {
+        padding: 0 2em;
+    }
+
+    .opções {
+        margin-right: auto;
+    }
+
+    .container__texto {
+        display: block;
+    }
+}
+.conteudo {
+    margin: 3% 30% 3% 30%;
+}
+.formulario {
+    background-color: var(--cinza-claro);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 40px 0 40px;
+}
+
+.formulario__titulo {
+    margin-bottom: 20px;
+    color: var(--preto);
+    text-align: center;
+    font-size: 25px;
+}
+
+.formulario__label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color:#000000;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.form-group input, .form-group select {
+    display: flex;
+    width: 80%;
+    padding: 10px;
+    border: 1px solid var(--cinza-escuro);
+    border-radius: 4px;
+    margin:10px 20px 10px 20px ;
+}
+
+.form-group option {
+    display: flex;
+    width: 80%;
+    padding: 10px;
+    border: 1px solid var(--cinza-escuro);
+    border-radius: 0px;
+    margin:10px 20px 10px 20px ;
+}
+.input-padrao {
+    display: flex;
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--cinza-escuro);
+    border-radius: 4px;
+    margin:10px 20px 10px 20px ;
+}
+
+.contatos label {
+    display: block;
+    margin-bottom: 10px;
+    color:#000000;
+    margin-top: 15px;
+}
+
+.checkbox {
+    margin-bottom: 20px;
+    color:#000000;
+    margin-top: 15px;
+}
+
+.enviar {
+    margin: 20px 10px 10px 10px;
+    width: 97%;
+    padding: 15px;
+    background: #456464;
+	color: white;
+    color: var(--branco);
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.enviar:hover {
+	background: #b3bebd;
+	transform: scale(1.2);
+}
+
+
+.rodapé__imagem {
+    margin: 0 20px 75px 0;
+}
